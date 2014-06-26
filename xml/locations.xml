@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+  <result>
+    <name>The Peached Tortilla</name>
+    <address>3900 N. Cap TX Hwy 78746</address>
+    <lat>30.7581895</lat>
+    <lng>-97.687252</lng>
+    <phone>5122228781</phone>
+  </result>
+  <result>
+    <name>The Peached Tortilla</name>
+    <address>3900 N. Cap TX Hwy 78746</address>
+    <lat>30.243654</lat>
+    <lng>-97.7268667</lng>
+    <phone>5122228781</phone>
+  </result>
+  <result>
+    <name>Mellizoz Tacos</name>
+    <address>1503 S 1st St 78704</address>
+    <lat>30.2495779</lat>
+    <lng>-97.7546633</lng>
+    <phone>5129164996</phone>
+  </result>
+  <result>
+    <name>Choza Taqueria - NYU</name>
+    <address>124 MacDougal Street 10012</address>
+    <lat>40.730486</lat>
+    <lng>-74.000362</lng>
+    <phone>2125338226</phone>
+  </result>
+  <result>
+    <name>Choza Taqueria - NYU</name>
+    <address>124 MacDougal Street 10012</address>
+    <lat>40.729159</lat>
+    <lng>-73.999139</lng>
+    <phone>2125338226</phone>
+  </result>
+  <result>
+    <name>Iron Cactus (Downtown);</name>
+    <address>606 Trinity St 78701</address>
+    <lat>30.2672497</lat>
+    <lng>-97.7394218</lng>
+    <phone>5124729240</phone>
+  </result>
+  <result>
+    <name>Iron Cactus (North)</name>
+    <address>10001 Stonelake Blvd 78759</address>
+    <lat>30.3916382</lat>
+    <lng>-97.738613</lng>
+    <phone>5124729240</phone>
+  </result>
+  <result>
+    <name>Agave</name>
+    <address>140 7th Ave south 10014</address>
+    <lat>40.734896</lat>
+    <lng>-74.005389</lng>
+    <phone>2129892100</phone>
+  </result>
+</document>

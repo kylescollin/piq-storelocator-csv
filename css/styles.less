@@ -1,0 +1,194 @@
+/* Set these custom variables */
+@headerHeight: 300px;
+@footerHeight: 0px;
+@buttonColor: #ffa71d;
+@infoTextColor: #ffffff;
+@infoBackground: #606db2; /*url('../images/info.jpg');*/
+
+
+/* Set these custom variables */
+.grad (@buttonColor) { 
+  background-color: #F07575; /* fallback color if gradients are not supported */
+  background-image: -webkit-linear-gradient(top, lighten(@buttonColor,10%), darken(@buttonColor,10%)); /* For Chrome and Safari */
+  background-image:    -moz-linear-gradient(top, lighten(@buttonColor,10%), darken(@buttonColor,10%)); /* For old Fx (3.6 to 15) */
+  background-image:     -ms-linear-gradient(top, lighten(@buttonColor,10%), darken(@buttonColor,10%)); /* For pre-releases of IE 10*/
+  background-image:      -o-linear-gradient(top, lighten(@buttonColor,10%), darken(@buttonColor,10%)); /* For old Opera (11.1 to 12.0) */ 
+  background-image:         linear-gradient(to bottom, lighten(@buttonColor,10%), darken(@buttonColor,10%)); /* Standard syntax; must be last */
+}
+
+/* Standard Page CSS */
+@-webkit-keyframes spin {
+	0% {-webkit-transform: rotate(0deg);}
+	100% {-webkit-transform: rotate(359deg);}
+}
+body {
+	padding:0px;
+	margin:0px;
+	overflow-x:hidden;
+	overflow-y: auto;
+	font-family: sans-serif;
+	background-color: black;
+}
+img {
+	vertical-align: bottom;
+}
+#loading {
+	display: none;
+	position: absolute;
+	width: 640px;
+	height: 400px;
+	text-align: center;
+	z-index: 99;
+	opacity: 0.5;
+}
+#LoadingBanner {
+	position:absolute;
+	top:320px;
+	width:100%;
+	font-size:30px;
+	font-weight: bold;
+	line-height:38px;
+	color:#000;
+	}
+.loading-spinner {
+	-webkit-animation-delay: 0s;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-name: spin;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+	vertical-align:bottom;
+}
+#container {
+	min-width:640px;
+	max-width:640px;
+	height:960px;
+	position:relative;
+	overflow:hidden;
+	margin: 0 auto;
+}
+#MapToolbar {
+	display:block;
+	position:relative;
+	width:640px;
+	height: @headerHeight;
+	z-index:50;
+	float: left;
+}
+#map {
+	width:100%;
+	height: 960 - @headerHeight - @footerHeight;
+}
+#MapOverlay {
+	position:absolute;
+	float:left;
+	left: 0px;
+	top: @headerHeight;
+	width:100%;
+	height: 960 - @headerHeight - @footerHeight;
+	padding:0;
+	background-color:rgba(255,255,255,0.7);
+	-webkit-transition:opacity 0.4s linear;
+}
+#MapOverlay .loading-spinner {
+	display:none;
+}
+#MapFooter {
+	position: absolute;
+	bottom: 0px;
+}
+
+/* ======== LOCATION CHOICE STYLES ========== */
+
+#MapSearch {
+	margin:100px auto;
+	height:42px;
+	width: 400px;
+	position:relative;
+}
+.popover	{ 
+	-webkit-border-radius:8px;
+	-webkit-box-shadow:0px 4px 7px rgba(0,0,0,0.3);
+	padding:10px;
+	background:white;
+	position:relative;
+}
+.dc-button { 
+	display:inline-block;
+	padding:10px;
+	width:170px;
+	text-align:center;
+	text-decoration:none;
+	font-size:18px;
+	font-weight:bold;
+	color:#666;
+	text-shadow:0px 1px 0px #FFFFFF;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.37, #ffffff), color-stop(1, #dbdbdb));
+	-webkit-box-shadow:0px 1px 2px rgba(0,0,0,0.3);
+	-webkit-border-radius:3px;
+}
+.dc-button:active, .dc-button.clicked {
+	-webkit-box-shadow:0px 0px 2px rgba(0,0,0,1.0);
+	text-shadow:0px 1px 0px rgba(0,0,0,1.0);
+	color:#fff;
+	.grad(@buttonColor);
+}
+#CustomLocation {
+	border:0 none;
+	padding:0.5em;
+	display:none;
+	margin-left: 50px;
+}
+#CustomLocation input[type="text"] {
+	width:227px;
+	font-size:100%;
+}
+#submit {
+	border: none;
+	-webkit-box-shadow:0px 0px 2px rgba(0,0,0,1.0);
+	text-shadow:0px 1px 0px rgba(0,0,0,1.0);
+	color:#fff;
+	font: bold 18px Helvetica, sans-serif;
+	.grad(@buttonColor);
+}
+
+/* ======== LOCATION DETAIL STYLES ========== */
+
+#MapInfo {
+	display:none;
+	position:absolute;
+	top: 960 - 100 - @footerHeight;
+	-webkit-transition:bottom 1s ease-out;
+	left:0px;
+	width:600px;
+	height:88px;
+	padding:12px 0px 0px 40px;
+	background: @infoBackground;
+	font-size:24px;
+	color: @infoTextColor;
+}
+.infoSection {
+	float: left;
+	margin-right: 20px;
+	max-width: 390px;
+	overflow: hidden;
+}
+.title {
+  	font: normal 24px Helvetica, sans-serif;
+  	font-weight: bold;
+	margin:10px 20px 5px 0px;
+	float: left;
+}
+.distance {
+	float: left;
+  	font: italic 18px Helvetica, sans-serif;
+	margin:6px 0 0 0;
+}
+.address {
+  	font: normal 20px Helvetica, sans-serif;
+	margin:0 0 0.6em;
+	clear: both;
+}
+.storeButtons {
+	float: right;
+	margin-right: 15px;
+}

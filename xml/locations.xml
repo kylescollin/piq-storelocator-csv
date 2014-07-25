@@ -1,59 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document>
-  <result>
-    <name>The Peached Tortilla</name>
-    <address>3900 N. Cap TX Hwy 78746</address>
-    <lat>30.7581895</lat>
-    <lng>-97.687252</lng>
-    <phone>5122228781</phone>
-  </result>
-  <result>
-    <name>The Peached Tortilla</name>
-    <address>3900 N. Cap TX Hwy 78746</address>
-    <lat>30.243654</lat>
-    <lng>-97.7268667</lng>
-    <phone>5122228781</phone>
-  </result>
-  <result>
-    <name>Mellizoz Tacos</name>
-    <address>1503 S 1st St 78704</address>
-    <lat>30.2495779</lat>
-    <lng>-97.7546633</lng>
-    <phone>5129164996</phone>
-  </result>
-  <result>
-    <name>Choza Taqueria - NYU</name>
-    <address>124 MacDougal Street 10012</address>
-    <lat>40.730486</lat>
-    <lng>-74.000362</lng>
-    <phone>2125338226</phone>
-  </result>
-  <result>
-    <name>Choza Taqueria - NYU</name>
-    <address>124 MacDougal Street 10012</address>
-    <lat>40.729159</lat>
-    <lng>-73.999139</lng>
-    <phone>2125338226</phone>
-  </result>
-  <result>
-    <name>Iron Cactus (Downtown);</name>
-    <address>606 Trinity St 78701</address>
-    <lat>30.2672497</lat>
-    <lng>-97.7394218</lng>
-    <phone>5124729240</phone>
-  </result>
-  <result>
-    <name>Iron Cactus (North)</name>
-    <address>10001 Stonelake Blvd 78759</address>
-    <lat>30.3916382</lat>
-    <lng>-97.738613</lng>
-    <phone>5124729240</phone>
-  </result>
-  <result>
-    <name>Agave</name>
-    <address>140 7th Ave south 10014</address>
-    <lat>40.734896</lat>
-    <lng>-74.005389</lng>
-    <phone>2129892100</phone>
-  </result>
+	<result>
+		<name>Dominican Joes</name>
+		<address>515 s. Congress Ave 78704</address>
+		<lat>30.2558565</lat>
+		<lng>-97.7465575</lng>
+		<phone>5124483919</phone>
+	</result>
+	<result>
+		<name>The Station SF</name>
+		<address>596 Pacific Ave 94113</address>
+		<lat>37.79796066</lat>
+		<lng>-122.4071302</lng>
+		<phone>4152910690</phone>
+	</result>
+	<result>
+		<name>The station SF</name>
+		<address>596 Pacific Ave 94113</address>
+		<lat>37.79467</lat>
+		<lng>-122.404755</lng>
+		<phone>4152910690</phone>
+	</result>
+	<result>
+		<name>Toby's estate</name>
+		<address>160 5th Ave 10010</address>
+		<lat>40.739865</lat>
+		<lng>-73.990861</lng>
+		<phone>6465590161</phone>
+	</result>
+	<result>
+		<name>Toby's estate</name>
+		<address>160 5th Ave 10010</address>
+		<lat>40.738969</lat>
+		<lng>-73.991354</lng>
+		<phone>6465590161</phone>
+	</result>
+	<result>
+		<name>Toby's Estate</name>
+		<address>160 5th Ave 10010</address>
+		<lat>40.739939</lat>
+		<lng>-73.989658</lng>
+		<phone>6465590161</phone>
+	</result>
+	<result>
+		<name>The Bean</name>
+		<address>824 broadway 10003</address>
+		<lat>40.733226</lat>
+		<lng>-73.99123</lng>
+		<phone>2125107714</phone>
+	</result>
+	<result>
+		<name>The Bean</name>
+		<address>824 broadway 10003</address>
+		<lat>40.733515</lat>
+		<lng>-73.989535</lng>
+		<phone>2125107714</phone>
+	</result>
+	<result>
+		<name>Caffe Medici</name>
+		<address>1101 West Lynn 78703</address>
+		<lat>30.2795392</lat>
+		<lng>-97.7593702</lng>
+		<phone>5125245049</phone>
+	</result>
+	<result>
+		<name>StinsonÕs Rosedale</name>
+		<address>4416 Burnet Rd,  78756</address>
+		<lat>30.3151275</lat>
+		<lng>-97.7417583</lng>
+		<phone>5129684970</phone>
+	</result>
+	<result>
+		<name>Wayside</name>
+		<address>139 E12th Street 10003</address>
+		<lat>40.7319459</lat>
+		<lng>-73.990137</lng>
+		<phone>6464788702</phone>
+	</result>
+	<result>
+		<name>Wayside</name>
+		<address>139 E12th Street 10003</address>
+		<lat>40.732198</lat>
+		<lng>-73.988299</lng>
+		<phone>6464788702</phone>
+	</result>
 </document>

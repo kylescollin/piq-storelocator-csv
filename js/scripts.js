@@ -4,8 +4,7 @@ var userLat;
 var userLng;
 
 var img_srcs = [
-    'images/header.png',
-    'images/footer.png'
+    'images/header.jpg'
 ];
 
 var imgs_to_load = img_srcs.length
@@ -260,16 +259,20 @@ function AdController() {
         console.log(result.distance);
 
         if(result.phone != null) {
-            callButton.href = "tel://" + result.phone.match(/\d/g).join("");
+            //changed from callButton.href for Google Analytics
+            callButton.addEventListener("click", function(){trackOutboundLink('tel://' + result.phone.match(/\d/g).join("")); return false;}, false);
             callButton.style.display = "inline-block";
         } else {
             callButton.style.display = "none";
         }
 
         if(typeof(targetLoc) == 'undefined'){
-            dirButton.href =  googleMapBaseUrl + 'saddr=(' + myCurrentLoc.coords.latitude + ',' + myCurrentLoc.coords.longitude + ')&daddr=' + result.address;
+            //changed from dirButton.href for Google Analytics
+            dirButton.addEventListener("click", function(){trackOutboundLink(googleMapBaseUrl + 'saddr=(' + myCurrentLoc.coords.latitude + ',' + myCurrentLoc.coords.longitude + ')&daddr=' + result.address); return false;}, false);
+            console.log(dirButton);
         }else{
-            dirButton.href =  googleMapBaseUrl + 'saddr=' + targetLoc.formatted_address + '&daddr=' + result.address;
+            dirButton.addEventListener("click", function(){trackOutboundLink(googleMapBaseUrl + 'saddr=' + targetLoc.formatted_address + '&daddr=' + result.address); return false;}, false);
+            console.log(dirButton);
         }
 
         // Display Distance to Location
@@ -300,7 +303,7 @@ function AdController() {
         if(customLocationFields.style.display == "none") {
             customLink.className += " clicked";
             customLocationFields.style.display = "block";
-            searchForm.style.height = (searchForm.clientHeight + 19).toString() + "px";
+            searchForm.style.height = (searchForm.clientHeight + 70).toString() + "px";
         } else {
             customLink.className = customLink.className.replace(/ clicked/g,"");
             customLocationFields.style.display = "none";
@@ -311,8 +314,9 @@ function AdController() {
     function handleGeocoderResponse(results, status) {
         if(status == "OK") {
             myMap.fitBounds(results[0].geometry.viewport);
-            userLat = results[0].geometry.location.k;
-            userLng = results[0].geometry.location.A;
+            userLat = results[0].geometry.location.lat();
+            userLng = results[0].geometry.location.lng();
+            console.log("handleGeocoderResponse: " +userLat+", "+userLng);
             targetLoc = results[0];
             findResults();
         } else {

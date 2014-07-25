@@ -29,29 +29,29 @@
 	</div>
 	<!-- Main Map -->
 	<div id="container">
-		<div id="MapToolbar"><img src="images/header.png" /></div>
+		<div id="MapToolbar"><a href="#" onclick="trackOutboundLink('#########'); return false;"><img src="images/header.jpg" /></a></div>
 		<div id="map"></div>
 		
 		<div id="MapOverlay">
 			<img class="loading-spinner" src="images/load.png" />
 			<form id="MapSearch" class="popover search-form">
-				<a href="#" class="dc-button" id="LocateMe" ga-category="Location Choice" ga-action="Current Location" ga-label="Button" onclick="trackEvent(this); return false;">Current Location</a>&nbsp;&nbsp;
-				<a href="#" class="dc-button" id="CustomLink" ga-category="Location Choice" ga-action="Custom Location" ga-label="Button" onclick="trackEvent(this); return false;">Custom Location</a>
+				<a href="#" class="dc-button" id="LocateMe" ga-category="location choice" ga-action="in-page events" ga-label="current location" onclick="trackEvent(this); return false;">Current Location</a>&nbsp;&nbsp;
+				<a href="#" class="dc-button" id="CustomLink" ga-category="location choice" ga-action="in-page events" ga-label="custom location" onclick="trackEvent(this); return false;">Custom Location</a>
 				<fieldset id="CustomLocation">
 					<input type="text" id="CustomLocationString" placeholder="City, State or Zip Code"/>
 					<input type="submit" value="Go" id="submit" />
 				</fieldset>
 			</form>
 		</div>
-		<!-- <div id="MapFooter"><img src="images/footer.png" /></div> -->
+
 		<div id="MapInfo">
 			<div class="infoSection">
 				<h3 class="title">title</h3><h5 class="distance"></h5>
 				<h4 class="address">address</h4>
 			</div>
 			<div class="storeButtons">
-				<a href="#" id="CallButton" ga-category="Specific Location Buttons" ga-action="Call Store" ga-label="Button" onclick="trackEvent(this); return false;"><img src="images/phone.png" /></a>
-				<a href="#" id="DirButton" ga-category="Specific Location Buttons" ga-action="Get Directions" ga-label="Button" onclick="trackEvent(this); return false;"><img src="images/map.png" /></a>
+				<a href="#" id="CallButton"><img src="images/phone.png" /></a>
+				<a href="#" id="DirButton"><img src="images/map.png" /></a>
 			</div>
 		</div>
 	</div>
